@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ temp()
+comment1.params=increment
+comment1.target=void\ warmer(int)
+comment2.params=increment
+comment2.target=void\ colder(int)
+comment3.params=
+comment3.target=int\ getTemperature()
+comment4.params=
+comment4.target=void\ increment()
+numComments=5

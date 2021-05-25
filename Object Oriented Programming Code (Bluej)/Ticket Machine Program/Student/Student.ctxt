@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=fullName\ studentID
+comment0.target=Student(java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Create\ storage\ for\ the\ students\ information\ \r\n\ i.e.\ full\ name\ and\ ID\r\n\r\n\ @param\ fullName\ the\ full\ name\ of\ the\ student\r\n\ @param\ studentID\ the\ ID\ of\ the\ student\r\n
+comment1.params=
+comment1.target=java.lang.String\ getName()
+comment1.text=\r\n\ Return\ the\ full\ name\ of\ the\ student\r\n
+comment2.params=
+comment2.target=java.lang.String\ getID()
+comment2.text=\r\n\ Return\ the\ ID\ of\ the\ student\r\n
+comment3.params=
+comment3.target=int\ getCredits()
+comment3.text=\r\n\ Return\ the\ amount\ of\ credits\ for\ the\ student\r\n
+comment4.params=replacementName
+comment4.target=void\ changeName(java.lang.String)
+comment5.params=additionalPoints
+comment5.target=void\ addCredits(int)
+comment6.params=
+comment6.target=void\ printStudent()
+comment7.params=
+comment7.target=void\ printID()
+comment8.params=
+comment8.target=java.lang.String\ getLoginName()
+numComments=9
