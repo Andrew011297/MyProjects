@@ -1,0 +1,130 @@
+Seminar 4
+
+Task 1
+
+Insert into table
+(column 1, column 2....)
+Values
+(expression1, expression2);
+
+Or
+
+Insert into table
+Values
+(column1, column2);
+
+1.
+
+INSERT INTO EMPLOYEE
+(EMP_FIRSTNAME, EMP_SURNAME, ADDRESS, EMPID)
+VALUES
+('Rachel', 'Phantomhive', 'Phantomhive Manor', 11); 
+
+/
+
+INSERT INTO EMPLOYEE
+VALUES
+(11, 'Rachel', 'Phantomhive', Phantomhive Manor);
+
+2.
+
+INSERT INTO EMPLOYEE
+(EMP_FIRSTNAME, EMP_SURNAME, ADDRESS, EMPID)
+VALUES
+('Vincent', 'Phantomhive', 'Phantomhive Manor', 12);
+
+/
+
+INSERT INTO EMPLOYEE
+VALUES
+(12, 'Vincent', 'Phantomhive', Phantomhive Manor);
+
+3.
+
+INSERT INTO EMPLOYEE
+(EMP_FIRSTNAME, EMP_SURNAME, ADDRESS, EMPID)
+VALUES
+('Sebastian', 'Michaelis', NULL, 13);
+
+/
+
+INSERT INTO EMPLOYEE
+VALUES
+(13, 'Sebastian', 'Michaelis', NULL);
+
+4.
+
+INSERT INTO EMPLOYEE
+(EMP_FIRSTNAME, EMP_SURNAME, ADDRESS, EMPID)
+VALUES
+('Aleister', 'Chamber', 'Druitt', 14);
+
+/
+
+INSERT INTO EMPLOYEE
+VALUES
+(14, 'Aleister', 'Chamber', Druitt);
+
+5.
+
+INSERT INTO EMPLOYEE
+(EMP_FIRSTNAME, EMP_SURNAME, ADDRESS, EMPID)
+VALUES
+('Claude', 'Faustus', NULL, 15);
+
+/
+
+INSERT INTO EMPLOYEE
+VALUES
+(15, 'Claude', 'Faustus', NULL);
+
+Task 2
+
+a.
+
+UPDATE EMPLOYEE
+SET ADDRESS = 'Lancra'
+WHERE EMPID = 3;
+
+b.
+
+UPDATE SUPPLIERS
+SET SUPP_OGG_CONT = 13
+WHERE SUPP_OGG_CONT = 3;
+
+Task 3
+
+1.
+
+ALTER TABLE EMPLOYEE
+ADD EMP_STATUS Varchar2(12) CONSTRAINT EMP_STATUS_CHECK
+    CHECK (EMP_STATUS IN ('EMPLOYED', 'RETRIRED', 'PROBATION', 'OTHER'));
+
+2.
+
+ALTER TABLE EMPLOYEE
+ADD EMP_STARTED Date;
+
+3.
+
+ALTER TABLE EMPLOYEE
+ADD EMP_LEFT Date;
+
+4.
+
+ALTER TABLE EMPLOYEE
+ADD CONSTRAINT EMP_LEFT_DATE_CHK CHECK (EMP_LEFT > EMP_STARTED);
+
+5.
+
+UPDATE EMPLOYEE
+SET EMP_STATUS = 'EMPLOYED';
+
+
+COMMIT;
+ROLLBACK;
+
+
+NEXT WEEK:
+CHANGING CUSTOMER TABLE
+VARCHAR 2 TO NUMBER (CUSTOMER ID)

@@ -1,0 +1,87 @@
+create table Funtom_employee
+(
+emp_ID			number(3)	constraint empid_pk primary key,
+Emp_firstname		varchar2(50)	constraint firstname_filled not null,
+Emp_surname		varchar2(50),
+Emp_department		number(2)	constraint employeeFKdepartment references funtom_department,
+emp_street		varchar2(50),
+emp_town		varchar2(50),
+emp_district		varchar2(50),
+Emp_grade		number(1)	default 4 constraint grade_chk check (Emp_grade >0 AND Emp_grade < 10) constraint employeeFKgrade references funtom_grade,
+Emp_site		varchar2(30) 	default 'LONDON'	
+);
+
+ALTER TABLE Funtom_employee
+ADD Employee_status	varchar2(10);
+
+ALTER TABLE Funtom_employee
+ADD Employee_start	date;
+
+ALTER TABLE Funtom_employee
+ADD Employee_termination	date;
+
+ALTER TABLE Funtom_employee
+ADD	constraint emp_terminate_chk check (Employee_termination > Employee_start);	
+		
+
+create table Funtom_department
+(
+dept_ID			number(3)	constraint deptID_pk primary key,
+dept_name		varchar2(50)	constraint name_filled not null
+);
+
+create table Funtom_grade
+(
+grade_ID		number(3)	constraint gradeID_pk primary key,
+Grade_rate		number(5,2)	constraint graderate_filled not null,
+Grade_hours		number(2)	
+);
+
+create table Funtom_timesheet
+(
+timesheet_ID		number(3)	constraint timesheetID_pk primary key,
+Timesheet_emp		number(3)	constraint timesheetEmp_filled not null constraint timesheetEmp_fk references funtom_employee,
+Timesheet_wc		date		constraint timesheetDate_filled not null,
+Timesheet_hours 	number(2),
+Timesheet_OT		number(2)	default 0,
+Timesheet_approved	number(3)	constraint timesheetApproved_fk references funtom_employee constraint Timesheet_approved unique
+);
+
+create table Funtom_activity
+(
+activity_ID		number(3)	constraint activitypk primary key,
+activity_rate		number(5,2)	
+);
+
+create table Funtom_consultancy
+(
+consultancy_ID		number(3)	constraint consultancyID_pk primary key,
+Consultancy_emp		number(3)	constraint consultancyemp_fk references funtom_employee,
+consultancy_hours	number(4,2)	constraint hours_chk check (consultancy_hours >1),
+Consultancy_client	number(3)	constraint client_fk references Funtom_customer,
+consultancy_date	date,
+consultancy_activity	number(3)	constraint consultancy_activity_fk references funtom_activity
+);
+
+create table Funtom_payroll
+(
+payroll_id		number(3)	constraint payrollID_pk primary key,
+payroll_emp		number(3)	constraint payroll_emp_fk references funtom_employee,	
+payroll_standard	number(8,2),
+payroll_overtime	number(8,2),
+payroll_pension		number(8,2),
+payroll_timesheet	number(3)	constraint payroll_timesheet_fk references funtom_timesheet,
+payroll_date		date		default sysdate
+);
+
+create table Funtom_customer
+(
+customer_ID		number(3)	constraint custID_pk primary key,
+customer_name		varchar2(50)	constraint custName_filled not null,
+customer_contact	varchar2(50),
+customer_acmanager	number(3)	constraint cust_accMan_fk references funtom_employee,	
+customer_addr1		varchar2(50),
+customer_addr2		varchar2(50),
+customer_addr3		varchar2(50),
+customer_addrpc		varchar2(10)
+);

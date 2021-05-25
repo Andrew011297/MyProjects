@@ -1,0 +1,166 @@
+Views
+
+1.0 
+'Employee'
+Employee first name
+Emplyee second name
+'worked'
+consultancy_hours 
+customer_name
+'charagable'
+
+1.1
+Create or replace view employee_workdays as
+select 'Employee ' || Emp_firstname || ' ' || Emp_surname || 
+'worked ' || sum(consultancy_hours) || 'hours for ' || customer_name || 
+'chargeable ' || sum(consultancy_hours*activity_rate) as "14 day consultancy report" 
+from Funtom_employee join Funtom_consultancy on Emp_ID = consultancy_ID
+join Funtom_customer on emp_id = customer_acmanager
+join Funtom_activity on consultancy_activity = activity_id
+where consultancy_date between (sysdate-14) and sysdate
+group by Emp_firstname, Emp_surname, customer_name, consultancy_ID, Emp_ID, activity_id;
+
+2.0
+90 day report
+Employee name
+'has worked'
+hours worked
+'hours,'
+overtime hours
+'were overtime, in the last'
+sysdate-90
+'days'
+
+Funtom_employee
+Funtom_timesheet
+
+(only been approved)
+
+2.1
+Create or replace view employee_hours as
+select Emp_firstname || ' ' || Emp_surname || ' has worked ' || 
+Timesheet_hours || ' hours, ' || Timesheet_OT ||
+ 'were overtime, in the last 90 days' as "90 Day report"
+from Funtom_employee join Funtom_timesheet on emp_ID = timesheet_ID
+where Timesheet_wc between (sysdate-90) and sysdate
+group by emp_ID, timesheet_ID, Emp_firstname, Emp_surname, timesheet_wc, Timesheet_OT, Timesheet_hours;
+
+3.0
+(Timesheets that have not been approved)
+(older than 2 weeks old)
+timesheet_ID
+timesheet_wc
+Employee name
+
+Funtom_timesheet
+Funtom_employee
+
+3.1
+Create or replace view Timesheet_dispute as
+select timesheet_ID, Timesheet_wc, Emp_firstname || ' ' || Emp_surname as "Employee"
+from Funtom_timesheet join Funtom_employee on emp_ID = Timesheet_emp
+where Timesheet_wc > sysdate-14 AND Timesheet_approved = NULL
+group by emp_ID, timesheet_ID, Emp_firstname, Emp_surname, Timesheet_wc;
+
+3.2
+Create or replace view Timesheet_dispute as
+select timesheet_ID , timesheet_wc , emp_firstname || ' ' || emp_surname as "Employee"   
+ from funtom_timesheet join funtom_employee on emp_id = timesheet_emp
+ where timesheet_wc  > (sysdate - 14) 
+   and timesheet_approved is null
+ group by emp_id, timesheet_id, emp_firstname, emp_surname, timesheet_wc;
+
+4.0
+"End of year report"
+employee name
+'was contracted for '
+hours_contracted
+'hours, earned '
+standard_pay
+'basic and '
+pay_OT
+'in OT. Total earnings were ' 
+total
+'Pension paid was ' 
+pension_paid
+
+4.1
+Create or replace view Timesheet_endReport as
+select emp_firstname || ' ' || emp_surname || ' was contracted for ' ||
+timesheet_hours || ' hours, earned ' || payroll_standard || ' basic and ' ||
+payroll_overtime || ' in OT. Total earnings were ' || sum(payroll_standard + payroll_overtime) ||
+ ' pension paid was ' || payroll_pension as "endOfYearReport"
+from funtom_employee join funtom_payroll on emp_id = payroll_emp
+join funtom_timesheet
+where payroll_date between 01-Apr-14 AND 31-Mar-15 
+group by emp_firstname, emp_surname, timesheet_hours, payroll_standard,
+payroll_overtime, emp_id, payroll_emp;
+
+Triggers
+
+1.0
+Automatically determine next timesheet id
+
+1.1
+create or replace trigger trg_auto_id
+for each row
+declare
+v_ariable number;
+begin
+select max(timesheet_id) +1 into v_ariable
+from funtom_timesheet;
+:new.timesheet_id := v_ariable;
+end;
+/
+
+2.0
+name		trg_contract_hours
+when		before
+what on		
+variables?	
+row or table?	
+
+2.1
+create or replace trigger trg_contract_hours
+for each row
+declare
+v_aribale number;
+v_other number;
+begin
+
+end;
+/
+
+3.0
+name
+when
+what on?
+variables?
+row or table?
+
+3.1
+create or replace trigger trg_payment
+for each row
+declare
+begin
+
+end;
+/
+
+
+*******
+FOR LAST VIEW
+ALL SUMS:
+
+sum payroll Ot
+pension
+
+
+sum grade hours
+standard
+OT
+standard +payrollOT
+pension
+	
+
+

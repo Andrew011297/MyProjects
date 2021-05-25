@@ -1,0 +1,43 @@
+Seminar week 5
+
+Task 1
+
+Products table has no indicator of who supplies that product.
+add an attribute that will identify the supplier
+should be an FK to the appropriate table.
+
+alter table products
+add supplier number(3) constraint supplier_fk references suppliers;
+
+Task 2
+
+add an attribute called PROD_PRICE
+should hold a numeric data type
+
+
+alter table products
+add PROD_PRICE number(8,2) constraint prod_type_check check(prod_price >0);
+
+Task 3
+
+
+select constraint_name from user_constraints
+where constraint_name like 'SYS%';
+
+Task 4
+
+NULL
+
+Task 5
+
+What are the names of the products that have the greatest profit returned on the unit cost?
+
+select product 
+from products
+where (prod_price-cost) =
+(
+select max(prod_price-cost)
+from products
+)
+;
+

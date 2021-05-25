@@ -1,0 +1,10 @@
+Create table suppliers
+(
+Supp_id		number(3)	constraint suppid_PK primary key,
+Supp_name	varchar2(50),
+Supp_house_NUM	varchar2(4),
+Supp_POSTCODE	varchar2(10),
+Supp_LEAD_TIME	number(3)	constraint LT_check check(supp_LEAD_TIME > 1),
+Supp_ACC_MAN	varchar2(40),
+Supp_ogg_CONT	number		constraint sup_fk_emp references employee
+);
