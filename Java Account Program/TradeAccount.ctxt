@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=firstName\ lastName\ accountNumber\ street\ town\ postcode\ accountName\ cStreet\ cTown\ cPostCode\ vatNumber
+comment0.target=TradeAccount(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Declaration\ for\ trade\ account\ without\ points\r\n\ @param\ firstName\ the\ customer's\ first\ name\r\n\ @param\ lastName\ the\ customer's\ last\ name\r\n\ @param\ accountNumber\ the\ customer's\ account\ number\r\n\ @param\ street\ the\ customer's\ street\r\n\ @param\ town\ the\ customer's\ town\r\n\ @param\ postcode\ the\ customer's\ postcode\r\n\ @param\ accountName\ the\ account's\ name\r\n\ @param\ cStreet\ the\ company's\ street\r\n\ @param\ cTown\ the\ company's\ town\r\n\ @param\ cPostCode\ the\ company's\ postcode\r\n\ @param\ vatNumber\ the\ VAT\ number\r\n\ @super\ this\ allows\ for\ additional\ usability\ held\ within\ the\ account\ class\r\n
+comment1.params=firstName\ lastName\ accountNumber\ street\ town\ postcode\ accountName\ cStreet\ cTown\ cPostCode\ vatNumber\ points
+comment1.target=TradeAccount(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int)
+comment1.text=\r\n\ Declaration\ for\ trade\ account\ with\ points\r\n\ @param\ firstName\ the\ customer's\ first\ name\r\n\ @param\ lastName\ the\ customer's\ last\ name\r\n\ @param\ accountNumber\ the\ customer's\ account\ number\r\n\ @param\ street\ the\ customer's\ street\r\n\ @param\ town\ the\ customer's\ town\r\n\ @param\ postcode\ the\ customer's\ postcode\r\n\ @param\ accountName\ the\ account's\ name\r\n\ @param\ cStreet\ the\ company's\ street\r\n\ @param\ cTown\ the\ company's\ town\r\n\ @param\ cPostCode\ the\ company's\ postcode\r\n\ @param\ vatNumber\ the\ VAT\ number\r\n\ @param\ points\ the\ number\ of\ points\ the\ customer\ has\r\n\ @super\ this\ allows\ for\ additional\ usability\ held\ within\ the\ account\ class\r\n
+comment2.params=
+comment2.target=java.lang.String\ getAccountName()
+comment2.text=\r\n\ Returns\ the\ account\ name\r\n\ @return\ the\ account\ name\r\n
+comment3.params=
+comment3.target=java.lang.String\ getCompanyAddress()
+comment3.text=\r\n\ Returns\ the\ company's\ address\r\n\ @return\ the\ company's\ address\r\n
+comment4.params=
+comment4.target=java.lang.String\ getVatNumber()
+comment4.text=\r\n\ Returns\ the\ VAT\ number\r\n\ @return\ the\ VAT\ number\r\n
+comment5.params=
+comment5.target=void\ print()
+comment5.text=\r\n\ Prints\ out\ the\ tostring\ method\ below\r\n\ \r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ Used\ to\ gather\ all\ of\ the\ relevant\ information\ and\ allow\ for\ a\ \r\n\ formatted\ output\r\n\ @return\ the\ formatted\ output\r\n
+numComments=7

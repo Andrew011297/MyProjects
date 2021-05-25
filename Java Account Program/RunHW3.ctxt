@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=yourName\ yourId
+comment0.target=RunHW3(java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ HW2Test\r\n\ \r\n\ @param\ name\ the\ student's\ name\r\n\ @param\ id\ the\ student's\ id\r\n
+comment1.params=
+comment1.target=void\ runTests()
+comment1.text=\r\n\ Run\ the\ various\ tests\r\n
+comment2.params=
+comment2.target=void\ testAddPersonalAccountNoPoints()
+comment2.text=\r\n\ Create\ 2\ Personal\ Accounts\ \r\n
+comment3.params=
+comment3.target=void\ testAddPersonalAccountWithPoints()
+comment4.params=
+comment4.target=void\ testAddTradeAccountNoPoints()
+comment5.params=
+comment5.target=void\ testAddTradeAccountWithPoints()
+numComments=6

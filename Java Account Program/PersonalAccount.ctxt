@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=firstName\ lastName\ accountNumber\ street\ town\ postcode\ cardNumber\ cardType
+comment0.target=PersonalAccount(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ char)
+comment0.text=\r\n\ Declaration\ for\ personal\ account\ without\ points\r\n\ @param\ firstName\ the\ customer's\ first\ name\r\n\ @param\ lastName\ the\ customer's\ last\ name\r\n\ @param\ accountNumber\ the\ customer's\ account\ number\r\n\ @param\ street\ the\ customer's\ street\r\n\ @param\ town\ the\ customer's\ town\r\n\ @param\ postcode\ the\ customer's\ postcode\r\n\ @param\ cardNumber\ the\ customer's\ card\ number\r\n\ @param\ cardType\ the\ customer's\ card\ type\r\n\ @super\ this\ allows\ for\ additional\ usability\ held\ within\ the\ account\ class\r\n
+comment1.params=firstName\ lastName\ accountNumber\ street\ town\ postcode\ cardNumber\ cardType\ points
+comment1.target=PersonalAccount(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ char,\ int)
+comment1.text=\r\n\ Declaration\ for\ personal\ account\ with\ points\r\n\ @param\ firstName\ the\ customer's\ first\ name\r\n\ @param\ lastName\ the\ customer's\ last\ name\r\n\ @param\ accountNumber\ the\ customer's\ account\ number\r\n\ @param\ street\ the\ customer's\ street\r\n\ @param\ town\ the\ customer's\ town\r\n\ @param\ postcode\ the\ customer's\ postcode\r\n\ @param\ cardNumber\ the\ customer's\ card\ number\r\n\ @param\ cardType\ the\ customer's\ card\ type\r\n\ @param\ points\ the\ number\ of\ points\ the\ customer\ has\r\n\ @super\ this\ allows\ for\ additional\ usability\ held\ within\ the\ account\ class\r\n
+comment2.params=
+comment2.target=java.lang.String\ getCardNumber()
+comment2.text=\r\n\ Returns\ the\ card\ number\ in\ a\ formatted\ display\r\n\ @.substring\ this\ allows\ for\ a\ precise\ amount\ of\ characters\ to\ be\ \r\n\ selected\r\n\ @return\ the\ card\ number\r\n
+comment3.params=
+comment3.target=java.lang.String\ getCardType()
+comment3.text=\r\n\ Returns\ the\ card\ type\ that\ the\ customer\ used\r\n\ Also\ returns\ a\ string\ instead\ of\ a\ char\r\n\ @return\ the\ card\ name\r\n
+comment4.params=
+comment4.target=void\ print()
+comment4.text=\r\n\ Prints\ out\ the\ toString\ method\ below\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ Used\ to\ gather\ all\ of\ the\ relevant\ information\ and\ allow\ for\ a\ \r\n\ formatted\ output\r\n\ @return\ the\ formatted\ output\r\n
+numComments=6

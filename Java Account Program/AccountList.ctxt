@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=AccountList()
+comment0.text=\r\n\ Create\ a\ LabClass\ with\ \ no\ limit\ on\ number\ of\ enrolments.\ \r\n\ All\ other\ details\ are\ set\ to\ default\ values.\r\n
+comment1.params=account
+comment1.target=void\ addAccount(Account)
+comment1.text=\r\n\ Add\ an\ account\ to\ this\ account\ list.\r\n\ @param\ account\ the\ accountobject\ to\ be\ added\r\n
+comment2.params=
+comment2.target=int\ getNumberOfAccounts()
+comment2.text=\r\n\ Return\ the\ number\ of\ accounts\ currently\ held.\r\n\ \r\n\ @return\ the\ number\ of\ accounts\r\n
+comment3.params=
+comment3.target=java.lang.String\ getAccounts()
+comment3.text=\r\n\ Provides\ a\ list\ of\ accounts.\ \r\n\ @return\ a\ list\ of\ accounts\r\n
+comment4.params=
+comment4.target=java.lang.String\ getTradeAccounts()
+comment4.text=\r\n\ Provides\ a\ list\ of\ trade\ accounts.\ \r\n\ @return\ a\ list\ of\ trade\ accounts\r\n
+comment5.params=
+comment5.target=java.lang.String\ getPersonalAccounts()
+comment5.text=\r\n\ Provides\ a\ list\ of\ personal\ accounts.\ \r\n\ @return\ a\ list\ of\ personal\ accounts\r\n
+comment6.params=accountNumber
+comment6.target=boolean\ removeAccount(java.lang.String)
+comment6.text=\r\n\ removes\ an\ account\ from\ the\ list.\r\n\ @param\ accountNumber\ The\ name\ of\ the\ account\ to\ be\ deleted\r\n\ @return\ true\ if\ account\ deleted\ otherwise\ false\r\n
+comment7.params=
+comment7.target=java.lang.String\ getTotalPointsHeld()
+comment7.text=\r\n\ Calculates\ and\ outputs\ the\ total\ number\ of\ points\ held\ \r\n\ (a)\ by\ account\ type\ and\ (b)\ as\ a\ whole\r\n\ \r\n\ @return\ details\ of\ the\ points\ held\ (a)\ by\ account\ type\ \r\n\ and\ (b)\ as\ a\ whole.\r\n
+numComments=8
