@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=BorrowDlg
+comment0.text=\r\n\ BorrowDlg\ is\ a\ custom\ class\ to\ add\ functionality\ to\ issue\ items\ on\ loan\ to\ a\ borrower\r\n\ BorrowDlg\ has\ been\ created\ to\ fulfill\ the\ needs\ of\ the\ specification\r\n\ \r\n\ @author\ Andrew\ Robson\ W16011147\r\n\ @version\ 1.0\r\n
+comment1.params=p
+comment1.target=BorrowDlg(MainMenu)
+comment1.text=\r\n\ This\ method\ is\ primarily\ used\ to\ create\ the\ GUI\r\n\ creates\ the\ panels\r\n\ creates\ the\ buttons\r\n\ creates\ the\ text\ fields\r\n\ adds\ action\ listeners\ to\ the\ buttons\r\n
+comment2.params=evt
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.text=\r\n\ Assigns\ all\ of\ the\ fnctionality\ to\ the\ buttons\ when\ they\ are\ pressed\r\n
+comment3.params=
+comment3.target=void\ processLoan()
+comment3.text=\r\n\ Implements\ all\ of\ the\ functionality\ that\ has\ been\ declared\ in\ the\ specification\r\n\ Particularly\ the\ requirements\ relevent\ to\ part\ 1\r\n\ Displays\ errors\ to\ the\ user\ in\ the\ panel\r\n
+numComments=4

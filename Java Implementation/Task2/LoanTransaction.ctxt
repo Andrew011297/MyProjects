@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=b\ i\ ts
+comment0.target=LoanTransaction(Borrower,\ Item,\ long)
+comment0.text=\r\n\ Constructor\ of\ Loan\ record\ with\ given\ Borrower,\ Item,\r\n\ \ \ long\ integer\ timestamp\r\n
+comment1.params=
+comment1.target=Borrower\ getBorrower()
+comment2.params=
+comment2.target=Item\ getItem()
+comment3.params=
+comment3.target=long\ getTimeStamp()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=
+comment5.target=java.lang.String\ toStringOmitBwr()
+comment5.text=\r\n\ Make\ a\ string\ representation\ of\ the\ Lone\ without\ the\ borrower\ reference\r\n\r\n\ In\ most\ contexts,\ Item\ has\ correct\ Borrower\ reference\r\n
+numComments=6

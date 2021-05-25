@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=mode\ path
+comment0.target=java.util.List\ loadData(char,\ java.lang.String)
+comment0.text=\r\n\ This\ method\ is\ used\ to\ create\ the\ array\ and\ to\ read\ \r\n\ data\ from\ the\ strings\ file\r\n\ @return\ returns\ the\ list\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ This\ method\ will\ be\ used\ to\ display\ the\ different\ processes;\r\n\ fetch,\ insert\ and\ delete\r\n\ It\ will\ also\ display\ the\ average\ time\ it\ takes\ for\ each\ process\ to\ complete\r\n
+numComments=2
