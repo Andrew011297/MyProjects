@@ -1,0 +1,29 @@
+#BlueJ class context
+comment0.params=
+comment0.target=HourlyEmployee()
+comment0.text=\r\n\ Default\ Constructor\r\n\r\n\ sets\ name\ to\ "No\ name"\r\n\ sets\ staff\ number\ to\ "Unallocated"\r\n\ sets\ wage\ and\ hours\ to\ 0.0\r\n\r\n
+comment1.params=name\ theWageRate\ theHours
+comment1.target=HourlyEmployee(java.lang.String,\ double,\ double)
+comment1.text=\r\n\ Constructor\r\n\ Neither\ theName\ nor\ the\ staff\ number\ is\ null;\ \ theWageRate\ and\ theHours\ are\ nonnegative.\r\n\r\n\ @param\ theName\ employee\ name\r\n\ @param\ theWageRate\ hourly\ wage\ rate\r\n\ @param\ theHours\ number\ of\ hours\ worked\r\n
+comment2.params=
+comment2.target=double\ getRate()
+comment2.text=\r\n\ gets\ the\ employee's\ wage\ rate\r\n\r\n\ @return\ The\ wage\ rate\r\n
+comment3.params=
+comment3.target=double\ getHours()
+comment3.text=\r\n\ gets\ the\ hours\ the\ employee\ has\ worked\r\n\r\n\ @return\ the\ hours\ worked\r\n
+comment4.params=
+comment4.target=double\ getPay()
+comment4.text=\r\n\ calculates\ the\ pay\ due\ to\ an\ employee\ for\ a\ month\r\n\ pay\ \=\ wage\ *\ hours\r\n\r\n\ @returns\ the\ pay\ earned.\r\n
+comment5.params=hoursWorked
+comment5.target=void\ setHours(double)
+comment5.text=\r\n\ sets\ the\ hours\ worked\r\n\ must\ be\ \ nonnegative.\r\n\r\n\ @param\ hoursWorked\ hours\ the\ employee\ has\ worked\r\n
+comment6.params=newWageRate
+comment6.target=void\ setRate(double)
+comment6.text=\r\n\ sets\ the\ wage\ rate\r\n\ must\ be\ \ nonnegative.\r\n\r\n\ @param\ newWageRate\ the\ new\ wage\ rate\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ the\ toString\ method\r\n\ returns\ a\ string\ in\ the\ format\r\n\ name,\ staff\ number,\ hourly\ wage\ rate\ "per\ hour\ for"\ hours\ "hours"\r\n\r\n\ @return\ the\ string\ representing\ the\ employee\ data.\r\n
+comment8.params=other
+comment8.target=boolean\ equals(java.lang.Object)
+comment8.text=\r\n\ checks\ for\ equality\r\n\ Two\ \ hourly\ employees\ are\ equal\ if\r\n\ they\ are\ bith\ hourly\ paid\ emloyees\r\n\ and\ also\ have\ the\ same\ name\r\n\ and\ also\ the\ same\ staff\ number\r\n\ and\ also\ the\ same\ wage\ rate\r\n\ and\ also\ the\ same\ number\ of\ hours\r\n\r\n\ @param\ other\ the\ employee\ object\ for\ comparison\r\n\ @return\ true\ if\ equal\ otherwise\ false\r\n
+numComments=9

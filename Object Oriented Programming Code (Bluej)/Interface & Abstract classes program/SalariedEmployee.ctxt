@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=
+comment0.target=SalariedEmployee()
+comment0.text=\r\n\ Default\ Constructor\r\n\ \r\n\ sets\ name\ to\ "No\ name"\r\n\ sets\ staff\ number\ to\ "Unallocated"\r\n\ sets\ salary\ to\ 0.0\r\n\r\n
+comment1.params=name\ theSalary
+comment1.target=SalariedEmployee(java.lang.String,\ double)
+comment1.text=\r\n\ Constructor\r\n\ Neither\ the\ name\ nor\ the\ staff\ number\ is\ null;\ \ the\ salary\ is\ nonnegative.\r\n\ \r\n\ @param\ theName\ employee\ name\ \ \ \ \ \r\n\ @param\ theSalary\ the\ employees\ annual\ salary\r\n
+comment2.params=
+comment2.target=double\ getSalary()
+comment2.text=\r\n\ gets\ the\ employee's\ salary\r\n\r\n\ @return\ The\ salary\r\n
+comment3.params=
+comment3.target=double\ getPay()
+comment3.text=\r\n\ \ calculates\ the\ monthly\ salary\r\n\ \ \r\n\ \ @returns\ the\ monthly\ salary\r\n
+comment4.params=newSalary
+comment4.target=void\ setSalary(double)
+comment4.text=\r\n\ sets\ the\ salary\r\n\ must\ be\ nonnegative.\r\n\ \r\n\ @param\ newSalary\ the\ new\ salary\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+comment5.text=\r\n\ the\ toString\ method\r\n\ returns\ a\ string\ in\ the\ format\r\n\ \ \ name\ staffnumber\ salary\ per\ year\r\n\r\n\ @return\ the\ string\ representing\ the\ employee\ data.\r\n
+comment6.params=other
+comment6.target=boolean\ equals(java.lang.Object)
+comment6.text=\r\n\ checks\ for\ equality\r\n\ Two\ \ hourly\ employees\ are\ equal\ if\ \r\n\ \ \ they\ are\ both\ salaried\ employees\r\n\ \ \ and\ they\ have\ the\ same\ name\r\n\ \ \ and\ also\ the\ same\ staffnumber\r\n\ \ \ and\ also\ the\ same\ salary\r\n\r\n\ @param\ other\ the\ employee\ object\ for\ comparison\r\n\ @return\ true\ if\ equal\ otherwise\ false\r\n
+numComments=7

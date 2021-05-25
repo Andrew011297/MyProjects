@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Rectangle()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Rectangle.\r\n
+comment1.params=length
+comment1.target=void\ setLength(int)
+comment1.text=\r\n\ Asigns\ a\ value\ to\ length.\r\n\ \r\n\ @param\ \ length\ \ the\ length\ of\ the\ rectangle\ \r\n
+comment2.params=breadth
+comment2.target=void\ setBreadth(int)
+comment2.text=\r\n\ Asigns\ a\ value\ to\ breadth.\r\n\ \r\n\ @param\ \ breadth\ \ the\ breadth\ of\ the\ rectangle\ \r\n
+comment3.params=
+comment3.target=int\ getLength()
+comment3.text=\r\n\ obtains\ the\ current\ value\ of\ length.\r\n\r\n\ @return\ \ \ \ \ the\ length\r\n
+comment4.params=
+comment4.target=int\ getBreadth()
+comment4.text=\r\n\ obtains\ the\ current\ value\ of\ breadth.\r\n\r\n\ @return\ \ \ \ \ the\ breadth\r\n
+comment5.params=
+comment5.target=int\ calculateArea()
+comment5.text=\r\n\ Calculates\ the\ area\ of\ the\ rectangle.\r\n\r\n\ @return\ \ \ \ \ the\ area\ of\ the\ rectangle\r\n
+numComments=6
