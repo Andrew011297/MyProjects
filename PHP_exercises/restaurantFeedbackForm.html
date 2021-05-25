@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Fine restaurant feedback</h1>
+    <p>Please provide feedback on your experience at our restaurant</p>
+    <form id = "feedback" action="addFeedback.php" method="get">
+        <div>Forename: <input type="text" name="forename"/></div>
+        <div>Surname: <input type="text" name="surname" /></div>
+        <div>Email: <input type="text" name="email" /></div>
+        <div>
+            Location of restaurant:
+            <select name="locationID">
+                <option value="ncl">Newcastle</option>
+                <option value="sun">Sunderland</option>
+                <option value="nyc">New York</option>
+                <option value="par">Paris</option>
+                <option value="rom">Rome</option>
+            </select>
+        </div>
+        <div>
+            Quality of service:
+            Excellent <input type="radio" name="service"
+                         value="excellent" />
+            Good <input type="radio" name="service" value="good" />
+            Average <input type="radio" name="service"
+                       value="average" />
+            Poor <input type="radio" name="service" value="poor" />
+        </div>
+        <div>
+            Quality of food:
+            Excellent <input type="radio" name="food"
+                         value="excellent" />
+            Good <input type="radio" name="food" value="good" />
+            Average <input type="radio" name="food" value="average" />
+            Poor <input type="radio" name="food" value="poor" />
+        </div>
+        <div>
+            Please provide any other feedback that you feel is
+            relevant: <br />
+            <textarea name="additionalFeedback"
+                 style="width:500px; height:120px;">
+            </textarea>
+        </div>
+        <div><input type="submit" value="Send feedback" /></div>
+    </form>
+
+    </body>
+    </html>

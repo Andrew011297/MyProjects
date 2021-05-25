@@ -1,0 +1,41 @@
+.filmID  {
+    width: 15%;
+    font-family: arial, helvetica, sans-serif;
+    border: thick solid gray;
+    float: left;
+    color: #000000;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+.title {
+    width: 20%;
+    font-family: arial, helvetica, sans-serif;
+    border: thick solid gray;
+    float: left;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+.category {
+    width: 15%;
+    font-family: arial, helvetica, sans-serif;
+    border: thick solid gray;
+    float: left;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+.notes {
+    width: 50%;
+    font-family: arial, helvetica, sans-serif;
+    border: thick solid gray;
+    float: left;
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+

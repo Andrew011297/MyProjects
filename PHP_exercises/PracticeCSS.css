@@ -1,0 +1,21 @@
+body {
+    font-family: arial, helvetica, sans-serif;
+    background-color: rgb(245, 243, 238);
+    color: #000000;
+    font-size: larger;
+}
+
+.film {
+    display: flex;
+    background-color: rgb(232, 230, 225);
+    width: 62%;
+    margin-top: 30px;
+    border: solid thin black;
+    height: 25px;
+    overflow: auto;
+    padding-left: 0.5em;
+}
+
+.category {
+    margin-left: 20px;
+}
