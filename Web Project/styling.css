@@ -1,0 +1,70 @@
+
+.bookOption {
+    clear: both;
+    /* displays when both sides are clear */
+    padding: 0.1em 2em;
+    /* defines the size of the padding */
+    color: #000000;
+    /* defines the colour of the text */
+    border-bottom: solid 1px #BDBDBD;
+    /* defines the margins properties */
+    margin: 0;
+    /* Defines the size of the margin */
+}
+
+nav {
+    float: left;
+    /* Decides which way the tag/object is floated */
+    width: 1920px;
+    /* Defines how wide the tag/object is */
+    height: 200px;
+    /* Defines the height of the tag/object */
+    font-family: arial, helvetica, sans-serif;
+    /* Defines the font families, these are default among many different browsers */
+    font-size: x-large;
+    /* Defines the size that the font will be */
+}
+
+nav ul {
+    float: left;
+    /* Decides which way the tag/object is floated */
+    list-style: none;
+    /* Defines the list style */
+    margin: 0;
+    /* Defines the size of the margin */
+    padding: 20px;
+    /* Defines the size of the padding */
+    width: 200px;
+    /* Defines how wide the tag/object is */
+    text-align: center;
+    /* Defines the alignment of the text */
+}
+
+nav li {
+    margin-bottom: 10px;
+    /* Defines the size of the margin */
+    margin-top: 10px;
+    /* Defines the size of the margin */
+    display: block;
+    /* Displays the element as a block element */
+    background-color: #9c9999;
+    /* Defines the colour of the background */
+    border: solid thin #464646;
+    /* Creates a border around the selected element */
+}
+
+nav li a:link, a:visited {
+    display: block;
+    /* Displays the element as a block element */
+    text-decoration: none;
+    /* Displays any text decoration on the element */
+    color: #7b4ec3;
+    /* Defines the colour of the text */
+}
+
+nav li a:hover {
+    background-color: #ddd4d7;
+    /* Defines the colour of the background */
+    color: #c3a520;
+    /* Defines the colour of the text */
+}
