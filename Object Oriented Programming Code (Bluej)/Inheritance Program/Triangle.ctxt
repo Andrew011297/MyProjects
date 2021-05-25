@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=style\ width\ length
+comment0.target=Triangle(java.lang.String,\ double,\ double)
+comment1.params=
+comment1.target=double\ area()
+comment2.params=
+comment2.target=java.lang.String\ getStyle()
+comment3.params=
+comment3.target=void\ printStyle()
+numComments=4

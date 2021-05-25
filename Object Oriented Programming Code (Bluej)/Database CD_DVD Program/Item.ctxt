@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=theTitle\ time
+comment0.target=Item(java.lang.String,\ int)
+comment1.params=
+comment1.target=java.lang.String\ getComment()
+comment2.params=
+comment2.target=java.lang.String\ getDetails()
+comment3.params=
+comment3.target=boolean\ getOwn()
+comment4.params=comment
+comment4.target=void\ setComment(java.lang.String)
+comment5.params=ownIt
+comment5.target=void\ setOwn(boolean)
+numComments=6

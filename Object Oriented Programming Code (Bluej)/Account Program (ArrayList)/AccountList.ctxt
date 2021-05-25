@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=AccountList()
+comment0.text=\r\n\ declaring\ accounts\ variable\r\n\ @new\ Creates\ a\ new\ instance\ of\ the\ array\ list\r\n
+comment1.params=account
+comment1.target=void\ addAccount(Account)
+comment1.text=\r\n\ Adds\ an\ account\ to\ the\ array\ list\r\n\ @param\ account\ the\ account\ object\ which\ will\ be\ added\r\n
+comment2.params=accountEntry
+comment2.target=void\ getAccount(int)
+comment2.text=\r\n\ Provides\ the\ specified\ account\ \r\n\ @param\ accountEntry\ The\ number\ that\ the\ account\ was\ allocated\ when\ created,\ \r\n\ used\ to\ retuen\ the\ specified\ account\r\n\ @System.out.println\ Prints\ the\ specified\ text/variables\ to\ the\ system\r\n
+comment3.params=
+comment3.target=void\ getAllAccounts()
+comment3.text=\r\n\ Returns\ all\ of\ the\ accounts\ that\ have\ been\ created\ and\ kept\r\n\ @System.out.println\ Prints\ the\ specified\ text/variables\ to\ the\ system\r\n\ @for\ For\ as\ long\ as\ there\ is\ an\ account\ proceed\r\n
+comment4.params=
+comment4.target=int\ getNumberOfAccounts()
+comment4.text=\r\n\ Returns\ the\ number\ of\ accounts\ that\ have\ been\ registered\ in\ the\ array\ list\r\n\ @return\ Returns\ number\ of\ accounts\r\n\ @.size()\ The\ size\ of\ the\ array\ list\r\n
+comment5.params=accountEntry
+comment5.target=void\ removeAccount(int)
+comment5.text=\r\n\ Removes\ the\ specified\ account\ through\ the\ use\ of\ accountEntry\r\n\ @.remove\ Removes\ the\ account\ from\ the\ array\ list\r\n\ @param\ accountEntry\ specifies\ the\ index\ position\ of\ the\ account\ to\ be\ removed\r\n
+comment6.params=accountNumber
+comment6.target=boolean\ removeAccount(java.lang.String)
+comment6.text=\r\n\ Removes\ the\ account\ through\ the\ use\ of\ the\ accountNumber\ \r\n\ @param\ accountNumber\ The\ number\ that\ is\ associated\ with\ the\ account,\ \r\n\ specified\ in\ account\ class\r\n\ @for\ For\ as\ long\ as\ there\ is\ a\ new\ account,\ proceed\r\n\ @if\ If\ the\ account\ number\ equals\ the\ getAccountNumber()\ then\ remove\ the\ account\r\n\ @return\ true,\ returns\ true\ so\ long\ as\ the\ if\ statement\ is\ accomplished\r\n\ @return\ false,\ returns\ false\ so\ long\ as\ the\ if\ statement\ fails\r\n
+comment7.params=accountNumber
+comment7.target=int\ search(java.lang.String)
+comment7.text=\r\n\ Searches\ for\ a\ specified\ account\ using\ the\ account\ number\r\n\ @param\ accountNumber\ The\ account\ number\ allocated\ to\ the\ account\r\n\ @return\ Returns\ the\ index\ number\ of\ the\ account\ number\ if\ it\ exists\r\n
+numComments=8

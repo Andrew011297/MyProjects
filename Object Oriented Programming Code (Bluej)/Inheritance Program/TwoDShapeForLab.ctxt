@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=TwoDShapeForLab()
+comment1.params=width\ length
+comment1.target=TwoDShapeForLab(double,\ double)
+comment1.text=\r\n\ Parameterized\ constructor\ for\ TwoDShapeForLab\r\n\ \r\n\ @param\ width\ the\ shape's\ width\r\n\ @param\ length\ the\ shape's\ length\r\n
+comment2.params=
+comment2.target=double\ getWidth()
+comment2.text=\r\n\ Get\ the\ shape's\ width\r\n\ \r\n\ @return\ the\ width\r\n
+comment3.params=
+comment3.target=double\ getLength()
+comment3.text=\r\n\ Get\ the\ shape's\ length\r\n\ \r\n\ @return\ the\ length\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=
+comment5.target=void\ printShapeCount()
+numComments=6
