@@ -1,0 +1,223 @@
+<style>
+    #logo {
+      background: url("/www/Images/tscan_logo.jpg" alt="tscan_logo") no-repeat;
+      background-size: 800px 500px;
+      border: 6px solid #333;
+      margin: 20px;
+      width: 1900px;
+      height: 400px;
+    }
+
+    img {
+      width: 1900px;
+      height: 400px;
+    }
+
+    body {
+      background-color: #d5e1df;
+      color: #000000;
+      margin:0px;
+      padding:0px;
+      font-family: sans-serif, Arial;
+      height: 1200px;
+      position: relative;
+    }
+
+    h1 {
+      text-decoration: underline black;
+      text-decoration-thickness: 1px;
+    }
+
+    h2 {
+      /*text-decoration: underline black;
+      text-decoration-thickness: 1px;*/
+    }
+
+    p1 {
+      background-color: (245, 243, 238);
+      color: #100000;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    p2 {
+      background-color: (245, 243, 238);
+      color: #100000;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    p3 {
+      background-color: (245, 243, 238);
+      color: #100000;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline-block;
+      height: inherit;
+    }
+
+    #buttonContainer {
+      background-color: #5F9EA0;
+      padding-bottom: 15px;
+      padding-top: 10px;
+      padding-left: 0px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    a:link {
+      color: #000000;
+      text-decoration: none;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-left: solid;
+      font-weight: bold;
+    }
+
+    a:hover {
+      outline-style: solid;
+      outline-color: black;
+      outline-width: thin;
+      background-color: #3CB271;
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: black;
+    }
+
+    .maintext1 {
+      position: relative;
+      margin-right: 35px;
+      margin-left: 25px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 25px;
+      float: left;
+      width: 895px;
+      background-color: #b7ccc8;
+      text-align: left;
+    }
+
+    .maintext2 {
+      position: relative;
+      margin-right: 35px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 80px;
+      float: right;
+      width: 870px;
+      background-color: #b7ccc8;
+      text-align: left;
+    }
+
+    .maintext3 {
+      position: relative;
+      margin-right: 35px;
+      margin-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 25px;
+      float: right;
+      width: 870px;
+      background-color: #b7ccc8;
+      text-align: left;
+    }
+
+    .imagecontainer {
+      position: relative;
+      margin-right: 35px;
+      margin-left: 25px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 25px;
+      float: left;
+      width: 100px;
+      height: 400px;
+      background-color: #b7ccc8;
+      text-align: left;
+    }
+
+    .newsletter {
+      position: relative;
+      margin-right: 35px;
+      margin-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 25px;
+      float: right;
+      width: 870px;
+      background-color: #b7ccc8;
+      text-align: center;
+    }
+
+    .container {
+      background-color: #c6d6d4;
+      text-align: center;
+    }
+
+    .verticalline {
+      border-left: solid black;
+      height: 615px;
+      float: left;
+      left: -18px;
+      top: 0;
+      position: relative;
+    }
+
+    footer {
+      position: absolute;
+      padding-top: 20px;
+      margin-top: 25px;
+      margin-left: 0px;
+      margin-right: 0px;
+      bottom: 0;
+      width: 1950px;
+      text-align: center;
+      background-color: #008B8B;
+      font-size: small;
+    }
+
+    #footerdiv {
+      width: 500px;
+      margin: 0;
+    }
+
+    .footerbutton {
+      text-align: center;
+      color: #000000;
+      text-decoration: none;
+      margin-left: 0px;
+      margin-top: 20px;
+      padding-left: 0px;
+      padding-right: 50px;
+    }
+
+    b:link {
+      margin-top: 20px;
+      color: #000000;
+      text-decoration: none;
+      margin-left: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    b:hover {
+      text-decoration: underline white;
+    }
+
+    b:visited {
+      text-decoration: none;
+      color: black;
+    }
+
+</style>
